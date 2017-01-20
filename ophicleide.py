@@ -63,7 +63,7 @@ def query():
     global models
     model = models[request.args.get('modelName')]
 
-    synonyms = [term for (term, x) in model.findSynonyms(request.args.get('term'), 5)]
+    synonyms = [term for (term, x) in model.findSynonyms(request.args.get('term'), 10)]
 
     return render_template('query.html', term=request.args.get('term'), modelname=request.args.get('modelName'), synonyms=synonyms)
     
