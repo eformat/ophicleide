@@ -44,7 +44,7 @@ spec:
         'production',\n  \t\t\t     deploymentConfig: 'ophicleide',\n\t\t\t     waitTime:
         '300000',\n\t\t\t     replicaCount: '1')\n  \n  stage 'verify deploy in production'\n
         \ openshiftVerifyDeployment(namespace: 'production',\n\t\t\t\t       depCfg:
-        'ophicelide',\n\t\t\t\t       replicaCount:'1',\n\t\t\t\t       verifyReplicaCount:
+        'ophicleide',\n\t\t\t\t       replicaCount:'1',\n\t\t\t\t       verifyReplicaCount:
         'true',\n\t\t\t\t       waitTime: '300000')\n}"
     type: JenkinsPipeline
   triggers:
