@@ -145,7 +145,7 @@ items:
                 failureThreshold: 3
                 httpGet:
                   path: /
-                  port: ${OPHICLEIDE_WEB_PORT}
+                  port: 8081
                   scheme: HTTP
                 periodSeconds: 10
                 successThreshold: 1
@@ -154,7 +154,7 @@ items:
                 failureThreshold: 3
                 httpGet:
                   path: /
-                  port: ${OPHICLEIDE_WEB_PORT}
+                  port: 8081
                   scheme: HTTP
                 periodSeconds: 10
                 successThreshold: 1
@@ -173,7 +173,7 @@ items:
                 failureThreshold: 3
                 httpGet:
                   path: /
-                  port: ${OPHICLEIDE_TRAINING_PORT}
+                  port: 8080
                   scheme: HTTP
                 periodSeconds: 10
                 successThreshold: 1
@@ -182,7 +182,7 @@ items:
                 failureThreshold: 3
                 httpGet:
                   path: /
-                  port: ${OPHICLEIDE_TRAINING_PORT}
+                  port: 8080
                   scheme: HTTP
                 periodSeconds: 10
                 successThreshold: 1
