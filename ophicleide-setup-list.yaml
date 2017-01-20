@@ -27,6 +27,13 @@ items:
         ref: develop
     strategy:
       type: Docker
+    triggers:
+    - github:
+        secret: secret101
+      type: GitHub
+    - generic:
+        secret: secret101
+      type: Generic
     output:
       to:
         kind: ImageStreamTag
@@ -42,11 +49,18 @@ items:
       git:
         uri: https://github.com/eformat/ophicleide-web
     strategy:
-      type: Source
+      type: Source    
       sourceStrategy:
         from:
           kind: DockerImage
           name: centos/nodejs-4-centos7:latest
+      triggers:
+      - github:
+          secret: secret101
+        type: GitHub
+      - generic:
+          secret: secret101
+        type: Generic
     output:
       to:
         kind: ImageStreamTag
