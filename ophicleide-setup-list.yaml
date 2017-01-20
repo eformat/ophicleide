@@ -40,7 +40,7 @@ items:
     source:
       type: Git
       git:
-        uri: https://github.com/ophicleide/ophicleide-web
+        uri: https://github.com/eformat/ophicleide-web
     strategy:
       type: Source
       sourceStrategy:
