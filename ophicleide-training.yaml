@@ -3,9 +3,9 @@ kind: BuildConfig
 metadata:
   creationTimestamp: null
   labels:
-    app: ophicelide-training
-    name: ophicelide-training
-  name: ophicelide-training
+    app: ophicleide-training
+    name: ophicleide-training
+  name: ophicleide-training
 spec:
   output: {}
   postCommit: {}
